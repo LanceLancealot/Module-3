@@ -1,0 +1,172 @@
+/* Apply box-sizing to all elements and their pseudo-elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Set default margin and padding for certain elements */
+html, body, .wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Overall styling for the body */
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+/* Styling for the content wrapper */
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Styling for the header section */
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+}
+
+/* Styling for the card element */
+.card {
+  background-color: hsl(200, 50%, 90%);
+  border-radius: 10px;
+  border-width: 2px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Add a subtle hover effect */
+.card:hover {
+  background-color: hsl(200, 50%, 85%);
+  transform: translateY(-5px);
+}
+
+/* Styling for horizontal line after card header */
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+/* Styling for the card body section */
+.card-body {
+  min-height: 100px;
+}
+
+/* Styling for the card footer section */
+.card-footer {
+  text-align: center;
+}
+
+/* Styling for horizontal line before card footer */
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+/* Clear floating elements within card footer */
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Styling for the "Generate Password" button */
+.btn {
+  border: none;
+  background-color: hsl(360, 91%, 55%);
+  border-radius: 25px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Add a subtle hover effect to the button */
+.btn:hover {
+  background-color: hsl(360, 91%, 45%);
+  transform: translateY(-2px);
+}
+
+/* Styling for disabled buttons */
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+/* Float elements to the right */
+.float-right {
+  float: right;
+}
+
+/* Styling for the generated password textarea */
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+/* Add a subtle border color change on focus */
+#password:focus {
+  border-color: hsl(200, 50%, 55%);
+}
+
+/* Media query for smaller screens (max-width: 690px) */
+@media (max-width: 690px) {
+  /* Adjust button font size, margins, and padding */
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  /* Adjust generated password textarea font size */
+  #password {
+    font-size: 1rem;
+  }
+}
+
+/* Media query for even smaller screens (max-width: 500px) */
+@media (max-width: 500px) {
+  /* Further reduce button font size */
+  .btn {
+    font-size: 0.8rem;
+  }
+}
