@@ -40,6 +40,7 @@ Instant validation of user input to ensure valid password criteria.
 Secure generation of random passwords using JavaScript's Math functions.
 
 Screenshots
+![Screenshot (3)](https://github.com/LanceLancealot/Module-3/assets/132924736/38cf2f27-0b49-4978-b6ee-4ec97c9c6134)
 
 Screenshot
 
