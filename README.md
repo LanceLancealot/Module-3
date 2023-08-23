@@ -1,4 +1,4 @@
-# Password Generator Starter Code
+# Password Generator
 
 Generate strong and secure passwords with this user-friendly web application. This project was developed as part of a coding challenge and allows users to customize the password criteria based on their preferences.
 
@@ -30,7 +30,3 @@ To run this application locally, you'll need:
 - A web browser (e.g., Chrome, Firefox, Safari).
 
 ### Installation
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/password-generator.git
